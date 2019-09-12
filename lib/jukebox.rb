@@ -26,9 +26,9 @@ end
 
 def play(songs)
   puts "Please enter a song name or number: "  
-  song_request = gets.strip
-  if song_request.to_i.between?(1..songs.length)
-    puts "Playing #{songs[song_request.to_i]}"
+   song_request= gets.strip
+  if song_request.to_i.between?(1, songs.length)
+    puts "Playing #{songs[song_request.to_i-1]}"
   elsif songs.include?(song_request)
     puts "Playing #{songs.find{|s| s == song_request}}"
   else 
