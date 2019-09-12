@@ -24,6 +24,53 @@ def list(songs)
   songs.each {|song| puts "#{songs.rindex(song)+1}. #{song}"}
 end
 
+def play(songs)
+  puts "Please enter a song name or number: "
+  song_request = gets.strip
+  if song_request.to_i.between?(1, songs.length)
+    puts "Playing #{songs[song_request.to_i-1]}"
+      elsif songs.include?(song_request)
+        puts "Playing #{songs.find {|s| s == song_request}}"
+  else 
+    puts "Invalid input, please try again"
+  end
+end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run(songs)
+  puts "Please enter a command:"
+  command = gets.strip
+  if command != 'exit'
+    case
+    when command == 'help'
+      help
+      run(songs)
+      when command == 'list'
+        list(songs)
+        run(songs)
+        when command == 'play'
+          play(songs)
+          run(songs)
+          when command == 'exit'
+            exit_jukebox
+    end
+  end
+  exit_jukebox
+end
+
+
+
+
+
+
+
+
+
+
+
 # def play(songs)
 #   puts "Please enter a song name or number: "  
 #   song_request= gets.strip
