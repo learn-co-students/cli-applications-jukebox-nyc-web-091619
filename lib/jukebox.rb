@@ -36,32 +36,32 @@ end
 #   end
 # end
 
-def play(songs)
-  puts "Please enter a song name or number: "  
-  song_request = gets.strip
-  case
-    when (song_request == "1" || song_request == "Phoenix - 1901")
-      puts "Playing #{songs[0]}"
-    when song_request == ("2" || "Tokyo Police Club - Wait Up")
-      puts "Playing #{songs[1]}"
-    when song_request == ("3" || "Sufjan Stevens - Too Much")
-      puts "Playing #{songs[2]}"
-    when song_request == ("4" || "The Naked and the Famous - Young Blood")
-      puts "Playing #{songs[3]}"
-    when song_request == ("5" || "(Far From) Home - Tiga")
-      puts "Playing #{songs[4]}"
-    when song_request == ("6" || "The Cults - Abducted")
-      puts "Playing#{songs[5]}"
-    when song_request == ("7" || "Phoenix - Consolation Prizes")
-      puts "Playing #{songs[6]}"
-    when song_request == ("8" || "Harry Chapin - Cats in the Cradle")
-      puts "Playing #{songs[7]}"
-    when song_request == ("9" || "Amos Lee - Keep It Loose, Keep It Tight")
-      puts "Playing #{songs[8]}"
-    else 
-      puts "Invalid input, please try again"
-  end
-end
+# def play(songs)
+#   puts "Please enter a song name or number: "  
+#   song_request = gets.strip
+#   case
+#     when (song_request == "1" || song_request == "Phoenix - 1901")
+#       puts "Playing #{songs[0]}"
+#     when song_request == ("2" || "Tokyo Police Club - Wait Up")
+#       puts "Playing #{songs[1]}"
+#     when song_request == ("3" || "Sufjan Stevens - Too Much")
+#       puts "Playing #{songs[2]}"
+#     when song_request == ("4" || "The Naked and the Famous - Young Blood")
+#       puts "Playing #{songs[3]}"
+#     when song_request == ("5" || "(Far From) Home - Tiga")
+#       puts "Playing #{songs[4]}"
+#     when song_request == ("6" || "The Cults - Abducted")
+#       puts "Playing#{songs[5]}"
+#     when song_request == ("7" || "Phoenix - Consolation Prizes")
+#       puts "Playing #{songs[6]}"
+#     when song_request == ("8" || "Harry Chapin - Cats in the Cradle")
+#       puts "Playing #{songs[7]}"
+#     when song_request == ("9" || "Amos Lee - Keep It Loose, Keep It Tight")
+#       puts "Playing #{songs[8]}"
+#     else 
+#       puts "Invalid input, please try again"
+#   end
+# end
 
 # def list(songs)
 #   songs.each_with_index do |value, index|
