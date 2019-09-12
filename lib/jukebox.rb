@@ -27,7 +27,28 @@ end
 def play(songs)
   puts "Please enter a song name or number: "  
   song_request = gets.strip
-  
+  binding.pry
+  case song_request
+  when song_request == ("1" || "Phoenix - 1901")
+    puts "#{songs[0]}"
+    binding.pry
+  when song_request == ("2" || "Tokyo Police Club - Wait Up")
+    puts "#{songs[1]}"
+  when song_request == ("3" || "Sufjan Stevens - Too Much")
+    puts "#{songs[2]}"
+  when song_request == ("4" || "The Naked and the Famous - Young Blood")
+    puts "#{songs[3]}"
+  when song_request == ("5" || "(Far From) Home - Tiga")
+    puts "#{songs[4]}"
+  when song_request == ("6" || "The Cults - Abducted")
+    puts "#{songs[5]}"
+  when song_request == ("7" || "Phoenix - Consolation Prizes")
+    puts "#{songs[6]}"
+  when song_request == ("8" || "Harry Chapin - Cats in the Cradle")
+    puts "#{songs[7]}"
+  when song_request == ("9" || "Amos Lee - Keep It Loose, Keep It Tight")
+    puts "#{songs[8]}
+  end
 end
 
 
